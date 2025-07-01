@@ -198,9 +198,78 @@ body {
     font-weight: 400;
     background: #f5f5f5;
     padding: 3px 8px;
-    border-radius: 4px;
+}
+
+/* ===== Logo样式 ===== */
+
+/* ===== 自定义图片Logo样式 ===== */
+.company-logo img,
+.school-logo img,
+.cert-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: inherit;
+    background: #fff;
+    padding: 2px;
+}
+
+/* 为不同尺寸的logo容器调整样式 */
+.company-logo {
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.2);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
     border: 1px solid #e0e0e0;
-    margin-left: auto;
+}
+
+.company-logo:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 16px rgba(26,35,126,0.3);
+}
+
+.school-logo {
+    width: 32px;
+    height: 32px;
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(46,125,50,0.2);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    border: 1px solid #e0e0e0;
+}
+
+.school-logo:hover {
+    transform: scale(1.1) rotate(-5deg);
+    box-shadow: 0 4px 12px rgba(46,125,50,0.3);
+}
+
+.cert-logo {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(245,124,0,0.2);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+    border: 1px solid #e0e0e0;
+}
+
+.cert-logo:hover {
+    transform: scale(1.1) rotate(3deg);
+    box-shadow: 0 4px 12px rgba(245,124,0,0.3);
 }
 
 .job-item ul {
@@ -285,6 +354,37 @@ body {
     margin: 0;
     height: 1.2em;
     background: none;
+}
+
+/* ===== 项目图标样式 ===== */
+.project-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #4CAF50, #45a049);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 12px;
+    box-shadow: 0 2px 8px rgba(76,175,80,0.2);
+    transition: all 0.3s cubic-bezier(.4,2,.6,1);
+    flex-shrink: 0;
+}
+
+.project-icon i {
+    color: #fff;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.project-icon:hover {
+    transform: scale(1.15) rotate(-5deg);
+    box-shadow: 0 4px 16px rgba(76,175,80,0.3);
+    background: linear-gradient(135deg, #45a049, #4CAF50);
+}
+
+.project-icon:hover i {
+    transform: scale(1.1);
 }
 
 /* ===== 教育与证书 ===== */
@@ -419,29 +519,65 @@ body {
     transform: translateY(-2px);
 }
 
-.contact-info p {
-    font-size: 1.12rem;
-    margin: 12px 0;
+.contact-item {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 16px;
+    margin: 16px 0;
+    padding: 12px 16px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(26,35,126,0.05);
+    transition: all 0.3s ease;
 }
 
-.contact-info p strong {
+.contact-item:hover {
+    background: #f8f9ff;
+    box-shadow: 0 4px 12px rgba(26,35,126,0.1);
+    transform: translateY(-2px);
+}
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, #1a237e, #3949ab);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    box-shadow: 0 2px 8px rgba(26,35,126,0.2);
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+}
+
+.contact-icon:hover {
+    transform: scale(1.1) rotate(5deg);
+    box-shadow: 0 4px 16px rgba(26,35,126,0.3);
+}
+
+.contact-details {
+    flex: 1;
+    font-size: 1.08rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.contact-details strong {
     color: #1a237e;
     font-weight: 600;
-    min-width: 80px;
 }
 
-.contact-info a {
-    color: #3949ab;
-    text-decoration: underline;
+.contact-details a {
+    color: #1976d2;
+    text-decoration: none;
+    transition: color 0.2s;
     word-break: break-all;
-    transition: color 0.2s, text-decoration 0.2s;
 }
 
-.contact-info a:hover {
-    color: #ff9800;
+.contact-details a:hover {
+    color: #1565c0;
     text-decoration: underline;
 }
 
