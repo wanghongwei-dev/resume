@@ -1,85 +1,59 @@
 # 个人简历项目
 
-这是一个响应式的个人简历网页项目，支持为每个公司、学校和证书添加logo。
+这是一个响应式的个人简历网页项目，所有公司、学校、证书、联系方式、项目经历均采用卡片化结构，支持为每个公司、学校和证书添加logo。
 
 ## 功能特性
 
 - 响应式设计，支持移动端和桌面端
 - 单页面应用（SPA）架构
-- 为每个公司、学校、证书添加logo支持
-- 现代化的UI设计
-- 平滑的动画效果
+- 所有公司、学校、证书、联系方式、项目经历均为卡片化结构（如 .job-item、.project-item、.edu-item、.cert-item、.contact-item）
+- 所有图标与右侧文字的间距统一为12px
+- 现代化的UI设计，卡片有阴影、圆角、悬停动画
+- 平滑的页面切换与动画效果
 
-## Logo使用说明
+## Logo与图标说明
 
 ### 当前使用的Logo
 
 项目目前使用真实的公司、学校和证书logo图片：
 
 #### 公司Logo
-- 慧博云通科技股份有限公司：`job_hydsoft.jpg`（推荐分辨率：38x38像素，实际显示：38x38）
-- 中通服软件科技有限公司：`job_ccssoft.jpg`（推荐分辨率：38x38像素，实际显示：38x38）
-- 北京华宇信息技术有限公司：`job_thunisoft.jpg`（推荐分辨率：38x38像素，实际显示：38x38）
-- 前锦网络信息技术（上海）有限公司：`job_51job.jpg`（推荐分辨率：38x38像素，实际显示：38x38）
-- 绵阳市安州区文化广电新闻出版局：`job_aztv.jpg`（推荐分辨率：38x38像素，实际显示：38x38）
+- 慧博云通科技股份有限公司：`job_hydsoft.jpg`
+- 中通服软件科技有限公司：`job_ccssoft.jpg`
+- 北京华宇信息技术有限公司：`job_thunisoft.jpg`
+- 前锦网络信息技术（上海）有限公司：`job_51job.jpg`
+- 绵阳市安州区文化广电新闻出版局：`job_aztv.jpg`
 
 #### 学校Logo
-- 西南科技大学：`edu_swust.jpg`（推荐分辨率：34x34像素，实际显示：34x34）
-- 电子科技大学：`edu_uestc.jpg`（推荐分辨率：34x34像素，实际显示：34x34）
+- 西南科技大学：`edu_swust.jpg`
+- 电子科技大学：`edu_uestc.jpg`
 
 #### 证书Logo
-- 所有计算机技术与软件专业技术资格（水平）证书：`edu_ruankao.jpg`（推荐分辨率：32x32像素，实际显示：32x32）
+- 所有计算机技术与软件专业技术资格（水平）证书：`edu_ruankao.jpg`
 
 #### 联系方式图标
-- fa-phone（电话）：实际显示约21x21像素
-- fa-envelope（邮箱）：实际显示约21x21像素
-- fa-blog（技术博客）：实际显示约21x21像素
+- fa-phone（电话）
+- fa-envelope（邮箱）
+- fa-blog（技术博客）
 
 #### 项目经历图标
-- fa-cloud、fa-code、fa-tools、fa-network-wired：实际显示约26x26像素
+- fa-cloud、fa-code、fa-tools、fa-network-wired
 
-> 实际显示尺寸以css/style.css为准，如需调整请修改CSS文件。
-
-### 如何替换为自定义Logo
-
-1. **准备Logo图片**
-   - 将公司/学校/证书的logo图片放入 `images/logos/` 目录
-   - 建议使用PNG格式，尺寸建议32x32像素
-   - 文件名建议使用英文，如：`company1.png`, `school1.png`, `cert1.png`
-
-2. **修改HTML代码**
-   找到对应的logo元素，将图片路径替换为新文件名：
-
-   ```html
-   <!-- 原来的代码 -->
-   <div class="company-logo">
-       <img src="images/logos/job_hydsoft.jpg" alt="慧博云通科技股份有限公司">
-   </div>
-
-   <!-- 替换为新的图片 -->
-   <div class="company-logo">
-       <img src="images/logos/job_newcompany.jpg" alt="新公司名称">
-   </div>
-   ```
-
-3. **调整CSS样式**
-   如果需要调整logo的显示效果，可以修改 `css/style.css` 中的相关样式：
-
-   ```css
-   .company-logo img {
-       width: 100%;
-       height: 100%;
-       object-fit: contain;
-   }
-   ```
+> 实际显示尺寸、样式、间距等以css/style.css为准，如需调整请修改CSS文件。
 
 ### Logo样式说明
 
-- **公司Logo**：蓝色渐变背景，32x32像素
-- **学校Logo**：绿色渐变背景，28x28像素  
-- **证书Logo**：橙色渐变背景，26x26像素
+- 所有logo均为白色背景，有色边框（公司蓝色、学校绿色、证书橙色），圆角，卡片化容器
+- 悬停时有缩放、旋转、阴影动画
+- 尺寸以CSS为准（公司logo约36x36px，学校32x32px，证书30x30px）
 
-所有logo都支持悬停动画效果，包括缩放和旋转。
+### 卡片结构说明
+
+- 工作经历、项目经历、教育经历、证书、联系方式均为卡片化结构：
+  - 外层为.info类（如.job-list、.project-list、.edu-info、.cert-info、.contact-info）
+  - 每条记录为.item类（如.job-item、.project-item、.edu-item、.cert-item、.contact-item）
+  - 图标与右侧文字间距统一为12px
+  - 卡片内外间距、阴影、圆角等以CSS为准
 
 ### Font Awesome 图标说明
 
@@ -95,7 +69,7 @@
   - fa-envelope（邮箱）
   - fa-blog（技术博客）
 
-Font Awesome 图标为矢量图标，显示尺寸由CSS控制，实际显示大小见下文。
+Font Awesome 图标为矢量图标，显示尺寸和间距由CSS控制。
 
 ## 文件结构
 
@@ -109,7 +83,8 @@ resume/
 ├── images/
 │   ├── profile.jpg     # 个人头像
 │   └── logos/          # Logo图片目录
-└── README.md           # 说明文档
+├── README.md           # 说明文档
+├── PROJECT_COMPLETE.md # 项目完成总结
 ```
 
 ## 使用方法
@@ -120,7 +95,7 @@ resume/
 ## 技术栈
 
 - HTML5
-- CSS3 (使用Flexbox和Grid布局)
+- CSS3（使用Flexbox布局，所有卡片和间距以CSS为准）
 - JavaScript (ES6+)
 - Font Awesome 图标库
 
