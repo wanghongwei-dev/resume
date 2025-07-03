@@ -25,8 +25,8 @@
 - 绵阳市安州区文化广电新闻出版局：`job_aztv.jpg`
 
 #### 学校Logo
-- 西南科技大学：`edu_swust.jpg`
 - 电子科技大学：`edu_uestc.jpg`
+- 西南科技大学：`edu_swust.jpg`
 
 #### 证书Logo
 - 所有计算机技术与软件专业技术资格（水平）证书：`edu_ruankao.jpg`

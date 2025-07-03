@@ -21,8 +21,8 @@ images/logos/
 ├── job_thunisoft.jpg    # 北京华宇信息技术有限公司
 ├── job_51job.jpg        # 前锦网络信息技术（上海）有限公司
 ├── job_aztv.jpg         # 绵阳市安州区文化广电新闻出版局
-├── edu_swust.jpg        # 西南科技大学
 ├── edu_uestc.jpg        # 电子科技大学
+├── edu_swust.jpg        # 西南科技大学
 └── edu_ruankao.jpg      # 计算机技术与软件专业技术资格（水平）考试
 ```
 
@@ -73,8 +73,8 @@ resume/
         ├── job_thunisoft.jpg     # 北京华宇信息技术有限公司
         ├── job_51job.jpg         # 前锦网络信息技术（上海）有限公司
         ├── job_aztv.jpg          # 绵阳市安州区文化广电新闻出版局
-        ├── edu_swust.jpg         # 西南科技大学
         ├── edu_uestc.jpg         # 电子科技大学
+        ├── edu_swust.jpg         # 西南科技大学
         └── edu_ruankao.jpg       # 计算机技术与软件专业技术资格（水平）考试
 ```
 
