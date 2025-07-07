@@ -730,4 +730,9 @@ body {
     border-radius: 4px;
     border: 1px solid #e0e0e0;
     margin-left: auto;
+}
+
+/* ===== 隐藏当前工作经历 ===== */
+.job-list .job-item:first-child {
+    display: none;
 } 
