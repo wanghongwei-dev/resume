@@ -15,21 +15,7 @@
 
 ### 当前使用的Logo
 
-项目目前使用真实的公司、学校和证书logo图片：
-
-#### 公司Logo
-- 慧博云通科技股份有限公司：`job_hydsoft.jpg`
-- 中通服软件科技有限公司：`job_ccssoft.jpg`
-- 北京华宇信息技术有限公司：`job_thunisoft.jpg`
-- 前锦网络信息技术（上海）有限公司：`job_51job.jpg`
-- 绵阳市安州区文化广电新闻出版局：`job_aztv.jpg`
-
-#### 学校Logo
-- 电子科技大学：`edu_uestc.jpg`
-- 西南科技大学：`edu_swust.jpg`
-
-#### 证书Logo
-- 所有计算机技术与软件专业技术资格（水平）证书：`edu_ruankao.jpg`
+项目目前使用作者真实的公司、学校和证书logo图片
 
 #### 联系方式图标
 - fa-phone（电话）
