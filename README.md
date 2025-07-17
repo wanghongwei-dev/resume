@@ -20,6 +20,7 @@
 #### 联系方式图标
 - fa-phone（电话）
 - fa-envelope（邮箱）
+- fa-github（GitHub）
 - fa-blog（技术博客）
 
 #### 项目经历图标
@@ -61,19 +62,21 @@ Font Awesome 图标为矢量图标，显示尺寸和间距由CSS控制。
 
 ```
 resume/
-├── index.html          # 主页面文件
-├── fontawesome/        # 图标字体库
+├── index.html              # 主页面文件
+├── logo-examples.html      # Logo示例页面
+├── README.md               # 项目说明文档
+├── PROJECT_COMPLETE.md     # 项目完成总结
 ├── css/
-│   └── style.css       # 样式文件
+│   └── style.css           # 样式文件
 ├── js/
-│   └── main.js         # JavaScript功能文件
+│   └── main.js             # JavaScript功能文件
+├── fontawesome/            # Font Awesome图标字体库
+│   ├── css/
+│   └── webfonts/
 ├── images/
-│   ├── profile.jpg     # 个人头像
-│   └── logos/          # Logo图片目录
-├── LICENSE             # 许可证
-├── README.md           # 说明文档
-├── PROJECT_COMPLETE.md # 项目完成总结
-└── logo-examples.html  # Logo示例
+│   ├── profile.jpg         # 个人头像
+│   └── logos/              # Logo图片目录
+└── LICENSE                 # 许可证
 ```
 
 ## 使用方法
