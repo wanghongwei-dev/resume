@@ -90,4 +90,7 @@ resume/
 - Chrome 60+
 - Firefox 55+
 - Safari 12+
-- Edge 79+ 
+- Edge 79+
+
+## 许可证
+本项目采用Apache License 2.0，详见LICENSE文件。
