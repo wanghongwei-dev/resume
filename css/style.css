@@ -732,7 +732,9 @@ body {
     margin-left: auto;
 }
 
-/* ===== 隐藏当前工作经历 ===== */
+/* ===== 隐藏当前工作经历 ===== 
 .job-list .job-item:first-child {
     display: none;
-} 
+}
+*/
+
