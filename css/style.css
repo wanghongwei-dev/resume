@@ -6,6 +6,8 @@ body {
     color: #222;
     min-height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -19,7 +21,8 @@ body {
     background: #1a237e;
     color: #fff;
     box-shadow: 0 2px 8px rgba(26,35,126,0.08);
-    position: relative;
+    position: sticky;
+    top: 0;
     z-index: 1000;
 }
 
@@ -119,7 +122,7 @@ body {
 /* ===== 通用区块样式 ===== */
 .section {
     background: #fff;
-    margin-top: 32px;
+    margin-top: 0;
     border-radius: 12px;
     box-shadow: 0 2px 12px rgba(26,35,126,0.06);
     padding: 32px 0;
@@ -516,7 +519,7 @@ body {
 .contact-info {
     background: #f7f9fb;
     border-radius: 8px;
-    padding: 20px 24px;
+    padding: 8px 24px;
     box-shadow: 0 1px 6px rgba(26,35,126,0.05);
     transition: all 0.2s;
 }
@@ -595,7 +598,7 @@ body {
     color: #fff;
     text-align: center;
     padding: 18px 0;
-    margin-top: 40px;
+    margin-top: 0;
     font-size: 1rem;
     letter-spacing: 1px;
 }
@@ -627,29 +630,30 @@ body {
     }
 }
 
-/* ===== 单页面应用样式 ===== */
+/* ===== 单页面应用样式（改为锚点滚动展示） ===== */
 .page {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
+    display: block;
+    position: relative;
     width: 100%;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.3s ease, transform 0.3s ease;
+    opacity: 1;
+    transform: none;
+    scroll-margin-top: 60px;
 }
 
+/* 取消active特殊样式，统一为常规块元素 */
 .page.active {
     display: block;
     position: relative;
     opacity: 1;
-    transform: translateY(0);
+    transform: none;
+    flex: 1 0 auto;
+    background: #fff;
 }
 
 .edu-info {
     background: #f7f9fb;
     border-radius: 8px;
-    padding: 20px 24px;
+    padding: 8px 24px;
     box-shadow: 0 1px 6px rgba(26,35,126,0.05);
     transition: all 0.2s;
 }
@@ -692,7 +696,7 @@ body {
 .cert-info {
     background: #f7f9fb;
     border-radius: 8px;
-    padding: 20px 24px;
+    padding: 8px 24px;
     box-shadow: 0 1px 6px rgba(26,35,126,0.05);
     transition: all 0.2s;
 }
